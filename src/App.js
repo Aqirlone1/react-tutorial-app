@@ -1,17 +1,22 @@
 import React from 'react';
-import { BrowserRouter as  Switch, Route,Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import NewPlace from './places/pages/NewPlace';
+import MainNavigation from './shared/components/Navigation/MainNavigation';
 import Users from './user/pages/Users.js'
 
 function App() {
   return (
-     <Switch>
-      <Routes>
+    <Router>    
+    <MainNavigation />
+    <main>
+       <Routes>
        <Route path='/' element ={ <Users/>} exact/>
-       <Route path='/places/new' element ={ <NewPlace/>} exact />
+       <Route path='/places/new' element = {<NewPlace/>} exact />
       </Routes>
-     </Switch>
+      </main>
+    </Router>    
+  
   );
 }
 

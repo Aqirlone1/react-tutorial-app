@@ -1,9 +1,11 @@
 import React from "react";
+
 import UserItem from "./UserItem.js";
 import './UsersList.css';
 import Card from "../../shared/components/UIElements/Card.js";
 
 const UsersList = props => {
+  // eslint-disable-next-line no-lone-blocks
   {
     if (props.items.length === 0)  {
       return(
