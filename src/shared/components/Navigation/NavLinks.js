@@ -10,7 +10,7 @@ return(
           <NavLink to = '/' exact>All Users</NavLink>
         </li>
         <li>
-          <NavLink to = '/u1/places'>My Places Users</NavLink>
+          <NavLink to = '/u1/places'>My Places</NavLink>
         </li>
         <li>
           <NavLink to = '/places/new'>Add PLaces </NavLink>

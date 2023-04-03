@@ -4,7 +4,7 @@ import './App.css';
 import NewPlace from './places/pages/NewPlace';
 import MainNavigation from './shared/components/Navigation/MainNavigation';
 import Users from './user/pages/Users.js'
-
+import UserPlaces from './places/pages/UserPlaces.js'
 function App() {
   return (
     <Router>    
@@ -13,6 +13,7 @@ function App() {
        <Routes>
        <Route path='/' element ={ <Users/>} exact/>
        <Route path='/places/new' element = {<NewPlace/>} exact />
+       <Route path='/:userId/places' element={<UserPlaces/>} exact></Route>
       </Routes>
       </main>
     </Router>    
